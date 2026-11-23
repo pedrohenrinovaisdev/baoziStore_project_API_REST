@@ -1,4 +1,5 @@
 package com.pedrohenri.baozistore.model;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,29 +10,26 @@ import java.time.LocalDate;
 //Transforma persistível
 @Entity
 public class Cliente {
-
-    public Cliente(){
-
-    }
-
     //Define campo de chave primária
     @Id
     //Define responsabilidade da definição da chave primária
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    public Long id;
-    public String nome;
-    public LocalDate clienteDesde;
+    private Long id;
+    private String nome;
+    private LocalDate clienteDesde;
+
+    public Cliente(){}
 
     // getters and setters
-    private void setId(Long id){
+    public void setId(Long id){
         this.id = id;
     }
 
-    public Long getId(){
+    public long getId(){
         return id;
     }
 
-    private void setNome(String nome){
+    public void setNome(String nome){
         this.nome = nome;
     }
 
@@ -39,7 +37,7 @@ public class Cliente {
         return nome;
     }
 
-    private void setClienteDesde(LocalDate clienteDesde){
+    public void setClienteDesde(LocalDate clienteDesde){
         this.clienteDesde = clienteDesde;
     }
 
