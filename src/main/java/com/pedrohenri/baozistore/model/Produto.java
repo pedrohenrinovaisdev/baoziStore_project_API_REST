@@ -13,7 +13,7 @@ public class Produto {
     private String nome;
 
     //Definindo propriedades especificas de coluna
-    @Column(name = "Preco", precision = 5, scale = 2)
+    @Column(name = "preco", precision = 5, scale = 2)
     private BigDecimal preco;
 
     private Boolean estoque;
