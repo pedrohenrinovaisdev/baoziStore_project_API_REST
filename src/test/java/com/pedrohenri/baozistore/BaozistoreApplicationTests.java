@@ -1,6 +1,6 @@
 package com.pedrohenri.baozistore;
 
-import org.junit.jupiter.api.Test;
+import taorg.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
